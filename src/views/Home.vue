@@ -12,9 +12,11 @@
           <el-image class="des-image"
                     :src="item.picUrl">
           </el-image>
+
           <el-link type="primary"
                    :href="item.url"
                    target="_blank">{{item.url}}</el-link>
+
         </el-card>
       </el-col>
     </el-row>
@@ -27,33 +29,23 @@ export default {
     return {
       pageData: [
         {
-          name: '一码当先在线编程系统（重构版）',
-          url: 'http://acm.fjutcoder.com',
+          name: '一码当先 | CodingFirst',
+          url: 'https://acm.fjutcoder.com',
           picUrl: require('../assets/image/cf.jpg')
         },
         {
-          name: '一码当先在线编程系统（旧版）',
-          url: 'http://oj.fjutcoder.com',
-          picUrl: require('../assets/image/cf.jpg')
-        },
-        {
-          name: 'GitLab',
-          url: 'http://gitlab.fjutcoder.com',
+          name: '实验室GIT | GitLab',
+          url: 'https://gitlab.fjutcoder.com',
           picUrl: require('../assets/image/gitlab.jpg')
         },
         {
-          name: 'API接口',
-          url: 'http://api.fjutcoder.com',
+          name: '服务端接口 | API',
+          url: 'https://api.fjutcoder.com',
           picUrl: require('../assets/image/api.jpg')
         },
         {
-          name: 'Tomcat后台',
-          url: 'http://tomcat.fjutcoder.com',
-          picUrl: require('../assets/image/tomcat.jpg')
-        },
-        {
-          name: '管理员后台',
-          url: 'http://admin.fjutcoder.com',
+          name: '管理员后台 | Admin',
+          url: 'https://admin.fjutcoder.com',
           picUrl: require('../assets/image/admin-fun.jpg')
         }
       ]
@@ -67,9 +59,9 @@ export default {
 <style scoped>
 .home-body {
   width: 100%;
-  min-height: 100%;
+  min-height: 500px;
   margin: auto;
-  background-color: #ffffff;
+  background-color: #f2f6fc;
 }
 
 .page-card {
