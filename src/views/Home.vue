@@ -1,22 +1,16 @@
 <template>
   <div class="home-body">
     <el-row :gutter="40">
-      <el-col :span="8"
-              v-for="item in this.pageData"
-              :key="item">
-        <el-card class="page-card"
-                 shadow="hover">
+      <el-col :span="8" v-for="item in this.pageData" :key="item">
+        <el-card class="page-card" shadow="hover">
           <div slot="header">
-            <span class="des-font">{{item.name}}</span>
+            <span class="des-font">{{ item.name }}</span>
           </div>
-          <el-image class="des-image"
-                    :src="item.picUrl">
-          </el-image>
+          <el-image class="des-image" :src="item.picUrl"></el-image>
 
-          <el-link type="primary"
-                   :href="item.url"
-                   target="_blank">{{item.url}}</el-link>
-
+          <el-link type="primary" :href="item.url" target="_blank">
+            {{ item.url }}
+          </el-link>
         </el-card>
       </el-col>
     </el-row>
@@ -34,9 +28,9 @@ export default {
           picUrl: require('../assets/image/cf.jpg')
         },
         {
-          name: '实验室GIT | GitLab',
-          url: 'https://gitlab.fjutcoder.com',
-          picUrl: require('../assets/image/gitlab.jpg')
+          name: '一码当先 | CodingFirst （旧版）',
+          url: 'https://acm2.fjutcoder.com',
+          picUrl: require('../assets/image/cf.jpg')
         },
         {
           name: '服务端接口 | API',
@@ -51,8 +45,7 @@ export default {
       ]
     }
   },
-  methods: {
-  }
+  methods: {}
 }
 </script>
 
